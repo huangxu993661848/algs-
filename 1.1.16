@@ -1,0 +1,11 @@
+static int lg(int N)
+	{
+		assert N > 0;
+		int res = 0, sum = 1;
+		while (sum <= N)
+		{
+			res++;
+			sum *= 2;
+		}
+		return res - 1;
+	}
